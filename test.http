@@ -1,0 +1,28 @@
+### Cadastrar um novo cliente
+POST http://localhost:8080/clientes
+Content-Type: application/json
+
+//testes de validação
+{
+  "nome": "Teste Validação",
+  "cpf": "12345678900",
+  "email": "alex@gmail.com",
+  "endereco": {
+    "cep": "01001000",
+    "logradouro": "",
+    "complemento": "",
+    "bairro": "",
+    "cidade": "",
+    "uf": ""
+  },
+  "telefones": [
+    {
+      "tipo": "CELULAR",
+      "numero": "11981057023"
+    },
+    {
+      "tipo": "RESIDENCIAL",
+      "numero": "11981057023"
+    }
+  ]
+}
