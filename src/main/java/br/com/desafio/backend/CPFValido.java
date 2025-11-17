@@ -19,7 +19,7 @@ import org.hibernate.validator.internal.constraintvalidators.hv.br.CPFValidator;
 @Constraint(validatedBy = CPFValidator.class)
 @Documented
 public @interface CPFValido {
-  Strinng message() default "CPF inválido ou em formato incorreto.";
+  String message() default "CPF inválido ou em formato incorreto.";
 
   Class<?>[] groups() default {};
 

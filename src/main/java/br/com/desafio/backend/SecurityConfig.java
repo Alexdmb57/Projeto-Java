@@ -21,7 +21,7 @@ public class SecurityConfig {
       .csrf().disable() // Desabilita proteção CSRF (comum para APIs REST)
       .authorizeRequests()
         // Usuário ADMIN (oermissão total para POST e GET)
-        .antMatchers(org.springframework.http.HttpMethod.POST, "/clientes/").hasRole("ADMIN")
+        .antMatchers(org.springframework.http.HttpMethod.POST, "/clientes").hasRole("ADMIN")
         .antMatchers(org.springframework.http.HttpMethod.PUT, "/clientes/**").hasRole("ADMIN")
         .antMatchers(org.springframework.http.HttpMethod.DELETE, "/clientes/**").hasRole("ADMIN")
         // Usuário padrão (somente permissão de GET)
@@ -34,17 +34,17 @@ public class SecurityConfig {
 
   // Criação dos Usuários em Memória (Admin e Padrão)
   @Bean
-  public UserDetailsService() {
+  public UserDetailsService userDetailsService() {
     // Senhas: 123@#@# e 123@#123
     UserDetails admin = User.withDefaultPasswordEncoder()
       .username("admin")
-      .password("123@#@#")
+      .password("123qwe!@#")
       .roles("ADMIN", "PADRAO")
       .build();
 
     UserDetails padrao = User.withDefaultPasswordEncoder()
-      .username("padrão")
-      .password("123@#123")
+      .username("padrao")
+      .password("123qwe123")
       .roles("PADRAO")
       .build();
 
