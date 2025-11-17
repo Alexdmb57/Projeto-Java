@@ -6,6 +6,8 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.br.CPF;
+
 import javax.persistence.CollectionTable;
 import javax.persistence.ElementCollection;
 import javax.persistence.JoinColumn;
@@ -28,6 +30,7 @@ public class Cliente {
   // --- Campos pedidos no Desafio ---
 
   @NotBlank // Não pode ser nulo nem vazio
+  @CPFValido // Valida o CPF com a nossa anotação personalizada
   private String nome;
 
   @NotBlank // Não pode ser nulo nem vazio

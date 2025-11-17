@@ -32,7 +32,7 @@ public class ClienteController {
         // Se não tiver celular, lançamos um erro 400 (Bad Request) com a mensagem
         throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Obrigatório haver pelo menos um telefone do tipo CELULAR.");
       }
-
+      
     // Se a validação do celular passar, salvamos:
     return service.cadastrar(cliente);
   }
