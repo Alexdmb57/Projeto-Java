@@ -20,7 +20,7 @@ public class MascaraUtil {
     }
 
     public static String telefone(String tipo, String numero) {
-    	// Verifica se o número é nulo, devolve nulo
+    	// Verifica se o número é nulo, devolve nulo se for o caso
         if (numero == null) return null;
 
         // Celular tem 11 dígitos
