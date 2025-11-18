@@ -11,8 +11,8 @@
 	<groupId>br.com.desafio</groupId>
 	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Projeto-Java</name>
+	<description>Projeto para avaliação em estágio.</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -27,41 +27,62 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>11</java.version>
-		<lombok.version>1.18.24</lombok.version>
+		<java.version>25</java.version>
 	</properties>
 	<dependencies>
+		<!-- JPA / Hibernate -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		
+		<!-- API Rest -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		<!-- Banco de Dados H2 -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.24</version> <optional>true</optional>
 		</dependency>
+		
+		<!-- Testes -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- Validação -->
 		<dependency>
     	<groupId>org.springframework.boot</groupId>
     	<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+		
+		 <!-- Driver MySQL -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+		
+		<!-- Bean Validation API -->
 		<dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
-    </dependency>
+      		<groupId>javax.validation</groupId>
+      		<artifactId>validation-api</artifactId>
+    	</dependency>
+    
+    	<!-- Spring Security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
