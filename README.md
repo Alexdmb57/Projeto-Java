@@ -58,4 +58,6 @@ Projeto para avaliação em estágio.
   O projeto de front, de preferência, deverá utilizar o React, mas outro framework/biblioteca Javascript pode ser utilizado.
   [PLUS]: 
   NÃO É OBRIGATÓRIO DESENVOLVER O FRONTEND, MAS É UMA VANTAGEM.
+  
+  Oi
 
